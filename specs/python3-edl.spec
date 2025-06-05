@@ -13,7 +13,7 @@ Requires: adb fastboot python3 python3-capstone python3-colorama python3-docopt 
 Recommends: python3-qrcode
 Suggests: dtc
 # edl does not work at all with ModemManager installed.
-Conflicts: ModemManager
+# Conflicts: ModemManager
 
 # Disable the unused debug package.
 %global debug_package %{nil}
