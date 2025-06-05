@@ -34,7 +34,7 @@ cd edl
 /usr/bin/python3 -m build --wheel
 
 %install
-mkdir -p %{buildroot}/etc/udev/rules.d/
+mkdir -p %{buildroot}%{_udevrulesdir}
 mkdir -p %{buildroot}/usr/share/licenses/python3-edl/
 
 cd %{_builddir}/edl/
@@ -45,12 +45,12 @@ rm -r -f \
   %{buildroot}/usr/lib/python3.*/site-packages/Loaders/.git \
   %{buildroot}/usr/lib/python3.*/site-packages/Loaders/.gitignore
 
-cp -Rv ./Drivers/*.rules %{buildroot}/etc/udev/rules.d/
+cp -v Drivers/50-android.rules Drivers/51-edl.rules %{buildroot}%{_udevrulesdir}/
 cp ./LICENSE %{buildroot}/usr/share/licenses/python3-edl/
 
 %files
-/etc/udev/rules.d/50-android.rules
-/etc/udev/rules.d/51-edl.rules
+%{_udevrulesdir}/50-android.rules
+%{_udevrulesdir}/51-edl.rules
 /usr/bin/beagle_to_loader
 /usr/bin/boottodwnload
 /usr/bin/edl
