@@ -1,5 +1,5 @@
 Name: python3-edl
-Version: 3.52.1+243
+Version: 3.52.1+244
 %define commit 407f1a98572cd41bfb9fbda3c15db854d42a54f6
 Release: 2%{?dist}
 Summary: Qualcomm Arm SoC Emergency Download (EDL) client and diagnostic tools
