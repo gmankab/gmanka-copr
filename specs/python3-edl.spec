@@ -1,7 +1,7 @@
 Name: python3-edl
 Version: 3.52.2
-%define commit 407f1a98572cd41bfb9fbda3c15db854d42a54f6
-Release: 2%{?dist}
+%define commit 502db9c439b0d748ca38b86e02765290cae9873e
+Release: 3%{?dist}
 Summary: Qualcomm Arm SoC Emergency Download (EDL) client and diagnostic tools
 License: GPL-3.0-only
 URL: https://github.com/bkerler/edl
