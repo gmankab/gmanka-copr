@@ -6,7 +6,7 @@ Summary: Qualcomm Arm SoC Emergency Download (EDL) client and diagnostic tools
 License: GPL-3.0-only
 URL: https://github.com/bkerler/edl
 Source0: https://github.com/bkerler/edl/archive/%{commit}.tar.gz
-BuildRequires: git python3-build python3-devel python3-installer python3-pip python3-setuptools python3-wheel xz-devel systemd-rpm-macros gcc libxml2-devel libxslt-devel
+BuildRequires: git python3-build python3-devel python3-installer python3-pip python3-setuptools python3-wheel xz-devel systemd-rpm-macros gcc libxml2-devel libxslt-devel libffi-devel
 # Possibly missing dependencies: python3-exscript, python3-keystone (optional), and python3-pycryptodome
 # https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=edl-git
 Requires: adb fastboot python3 python3-capstone python3-colorama python3-docopt python3-passlib python3-pycryptodomex python3-lxml python3-pyusb python3-pyserial python3-requests python3-wheel xz
